@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora dos Manin</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>Calculadora Básica</h1>
+
+        <input type="text" id="valor1">
+        <input type="text" id="valor2">
+
+        <button type="button" onclick="Operador('+')"> + </button>
+        <button type="button" onclick="Operador('-')"> - </button>
+        <button type="button" onclick="Operador('*')"> * </button>
+        <button type="button" onclick="Operador('/')"> / </button>
+        <button type="button" onclick="Calcular()"> = </button>
+        <br>
+
+        
+        <button type="button" onclick="apagar()"> C </button>
+
+        <br>
+
+        <h2><p id="saida">0</p></h2>
+    
+
+    </body>
+
+</html>
