@@ -1,0 +1,86 @@
+
+:root{
+    --display: #89c763;
+    --display-fonte: #0e9347;
+    --main-color: #35495c;
+    --second-color: #576d7e;
+    --tirth-color: #ff4d4d;
+    --tirth2-color: #cc0000;
+    --four-color: #0078d7;
+}
+
+*{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.display {
+    color: var();
+    background-color: var(--display);
+    border: 1px solid var(--display-fonte);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2em;
+    height: 85px;
+    overflow: hidden;
+}
+
+#display1, #display2{
+    color: var(--display-fonte);
+    height: 43px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--second-color);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    color: var(--second-color);
+    background-color: #e0e0e0;
+}
+
+.operator {
+    color: var(--four-color);
+    background-color: #f0f0f0;
+}
+.operator:hover {
+    background-color: #d0d0d0;
+}
+
+
+.clear {
+    background-color: var(--tirth-color);
+    color: white;
+}
+.clear:hover {
+    color: white;
+    background-color: var(--tirth2-color);
+}

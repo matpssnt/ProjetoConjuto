@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Calculadora dos Manin</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
 
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
+        <div class="display">
+            <div id="display2"></div>
+            <div id="display1">0</div>
+        </div>
 
-    <body>
-        <h1>Calculadora Básica</h1>
+        <div class="buttons">
+            <button class="clear" onclick="limparTela()">C</button>
+            <button class="clear" onclick="limparTela2()">CE</button>
+            <button class="operator" onclick="apagar()">←</button>
+            <button class="operator" onclick="selectOperator('/')">÷</button>
 
-        <input type="text" id="valor1">
-        <input type="text" id="valor2">
+            <button onclick="addValorTela('7')">7</button>
+            <button onclick="addValorTela('8')">8</button>
+            <button onclick="addValorTela('9')">9</button>
 
-        <button type="button" onclick="Operador('+')"> + </button>
-        <button type="button" onclick="Operador('-')"> - </button>
-        <button type="button" onclick="Operador('*')"> * </button>
-        <button type="button" onclick="Operador('/')"> / </button>
-        <button type="button" onclick="Calcular()"> = </button>
-        <br>
+            <button class="operator" onclick="selectOperator('*')">×</button>
 
-        
-        <button type="button" onclick="apagar()"> C </button>
+            <button onclick="addValorTela('4')">4</button>
+            <button onclick="addValorTela('5')">5</button>
+            <button onclick="addValorTela('6')">6</button>
 
-        <br>
+            <button class="operator" onclick="selectOperator('-')">-</button>
 
-        <h2><p id="saida">0</p></h2>
-    
+            <button onclick="addValorTela('1')">1</button>
+            <button onclick="addValorTela('2')">2</button>
+            <button onclick="addValorTela('3')">3</button>
 
-    </body>
+            <button class="operator" onclick="selectOperator('+')">+</button>
 
+            <button onclick="inverter()">±</button>
+            <button onclick="addValorTela('0')">0</button>
+            <button onclick="addValorTela('.')">.</button>
+            <button class="operator" onclick="calcular()">=</button>
+        </div>
+    </div>
+</body>
 </html>
